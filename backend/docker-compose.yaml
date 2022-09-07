@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  db_books:
+   container_name: db_books
+   ports:
+     - "5432:5432"
+   environment:
+    - POSTGRES_PASSWORD=pgadmin
+    - POSTGRES_USER=admin
+   image: postgres:14.3-alpine
